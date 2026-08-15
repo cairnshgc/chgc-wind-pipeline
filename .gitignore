@@ -1,0 +1,16 @@
+# Never commit secrets. The eagle.io API key lives in GCP Secret Manager and is
+# injected as an environment variable at runtime. It must never appear in a file.
+.env
+.env.*
+*.key
+*credentials*.json
+*service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
